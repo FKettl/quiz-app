@@ -1,10 +1,10 @@
 import React from 'react';
-import { Text, View, Image, Pressable, TextInput, Keyboard, Button } from 'react-native';
+import { Text, View, Pressable, TextInput, Keyboard } from 'react-native';
 import styles from "../entrar/style"
 import { FontAwesome } from "@expo/vector-icons"
-import {TouchableHighlight, TouchableOpacity} from 'react-native-gesture-handler'
+import { TouchableOpacity } from 'react-native-gesture-handler'
 
-export default function Login({navigation}) {
+export default function Entrar({navigation}) {
     return (
         <View style={styles.loginContainer}>
             <Text style={styles.loginText}>Entrar</Text>
@@ -25,7 +25,8 @@ export default function Login({navigation}) {
                 <TouchableOpacity style={{position:'relative', top: -8}} onPress={() => navigation.navigate('esqueceuSenha')}>
                     <Text style={styles.passwordText}>Esqueceu sua senha?</Text>
                 </TouchableOpacity>
-                <TouchableOpacity style={styles.buttonCircle}>
+                <TouchableOpacity style={styles.buttonCircle}
+                    onPress={() => navigation.navigate('Home')}>
                     <Text style={{color:'#fff', fontSize:16}}>Entrar</Text>
                 </TouchableOpacity>
                 <TouchableOpacity

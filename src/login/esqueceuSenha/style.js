@@ -42,6 +42,18 @@ buttonCircle: {
   position: 'relative',
   bottom: -16
 },
+goBackButton:{
+  position: 'relative',
+  alignItems: 'center',
+  borderColor: '#BEBAB3',
+  borderRadius: 50,
+  borderWidth: 1,
+  marginTop: 60,
+  width: 48,
+  height: 48,
+  marginLeft: 15,
+  justifyContent: 'center'
+}
   })
 
 

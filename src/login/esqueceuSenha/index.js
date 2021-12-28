@@ -9,18 +9,7 @@ export default function esqueceuSenha({navigation}) {
         <><View>
             <TouchableOpacity
                 onPress={() => navigation.goBack()}
-                style={{
-                    position: 'relative',
-                    alignItems: 'center',
-                    borderColor: '#BEBAB3',
-                    borderRadius: 50,
-                    borderWidth: 1,
-                    marginTop: 60,
-                    width: 48,
-                    height: 48,
-                    marginLeft: 15,
-                    justifyContent: 'center'
-                }}>
+                style={styles.goBackButton}>
                 <FontAwesome name='chevron-left' size={20} /></TouchableOpacity>
         </View><View style={styles.loginContainer}>
                 <Text style={styles.loginText}>Recuperar senha</Text>
