@@ -4,7 +4,7 @@ import styles from "../esqueceuSenha/style"
 import { FontAwesome } from "@expo/vector-icons"
 import {TouchableHighlight, TouchableOpacity} from 'react-native-gesture-handler'
 
-export default function esqueceuSenha({navigation}) {
+export default function EsqueceuSenha({navigation}) {
     return (
         <><View>
             <TouchableOpacity

@@ -8,7 +8,7 @@ import { Ionicons } from '@expo/vector-icons';
 import Intro from './src/intro'
 import Entrar from './src/login/entrar'
 import Cadastro from './src/login/cadastrar'
-import esqueceuSenha from './src/login/esqueceuSenha'
+import EsqueceuSenha from './src/login/esqueceuSenha'
 import HomeList from './src/home/homeList';
 import Config from './src/home/config';
 import Perfil from './src/home/perfil';
@@ -62,7 +62,7 @@ export default function App() {
         }}>
           <Stack.Screen name="Entrar" component={Entrar}/>
           <Stack.Screen name="Cadastro" component={Cadastro}/>
-          <Stack.Screen name="esqueceuSenha" component={esqueceuSenha}/>
+          <Stack.Screen name="esqueceuSenha" component={EsqueceuSenha}/>
           <Stack.Screen name="Home" component={Tabs}/>
         </Stack.Navigator>
       </NavigationContainer>

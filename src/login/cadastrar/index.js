@@ -31,7 +31,9 @@ export default function Cadastro({navigation}) {
                         ></TextInput>
                         <FontAwesome style={{ position: 'absolute', left: 320, top: 20 }} name='eye' size={20} />
                     </View>
-                    <TouchableOpacity style={styles.buttonCircle}>
+                    <TouchableOpacity style={styles.buttonCircle}
+                        onPress={() => navigation.navigate('Home')}
+                    >
                         <Text style={{ color: '#fff', fontSize: 16 }}>Cadastrar-se</Text>
                     </TouchableOpacity>
                     <TouchableOpacity style={{ position: 'relative', top: 26, justifyContent: 'center', paddingBottom: 16, alignSelf: 'center' }}>
