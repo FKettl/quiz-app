@@ -101,7 +101,6 @@ export default function HomeList({navigation}) {
               {
                 image: item.image,
                 title: item.title,
-                description: item.description,
                 tag: item.tag
               })}><HomeItems image={item.image} title={item.title} description={item.description} tag={item.tag}
               

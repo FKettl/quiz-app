@@ -15,7 +15,8 @@ import Histo from './src/home/perfil/historico';
 import About from './src/home/perfil/aboutUs';
 import Pesquisa from './src/home/pesquisa';
 import QuizDetail from './src/quiz/quizDetail';
-import testQuiz from './src/quiz/testQuiz';
+import TestQuiz from './src/quiz/testQuiz';
+import Resultado from './src/quiz/resultado';
 
 
 const Stack = createStackNavigator();
@@ -73,7 +74,8 @@ export default function App() {
           <Stack.Screen name="About" component={About}/>
           <Stack.Screen name='Pesquisa' component={Pesquisa}/>
           <Stack.Screen name='QuizDetail' component={QuizDetail}/>
-          <Stack.Screen name='testQuiz' component={testQuiz}/>
+          <Stack.Screen name='testQuiz' component={TestQuiz}/>
+          <Stack.Screen name='Resultado' component={Resultado}/>
         </Stack.Navigator>
       </NavigationContainer>
       ) : ( <Intro pular={pular}/>)}

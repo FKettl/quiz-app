@@ -5,6 +5,7 @@ import { TouchableOpacity } from 'react-native-gesture-handler'
 import { FontAwesome } from "@expo/vector-icons"
 
 export default function QuizDetail({navigation, route}) {
+
     return (
         <View style={styles.container}>
             <View style={styles.header}>
@@ -29,7 +30,9 @@ export default function QuizDetail({navigation, route}) {
             <TouchableOpacity style={styles.buttonCircle}
                     onPress={() => navigation.navigate('testQuiz',
                     {
-                      image: route.params.image
+                      image: route.params.image,
+                      tag: route.params.tag,
+                      title: route.params.title 
                     })}>
                     <Text style={{color:'#fff', fontSize:16}}>Fazer Tentativa</Text>
                 </TouchableOpacity>

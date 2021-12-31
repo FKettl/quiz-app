@@ -25,57 +25,48 @@ const styles = StyleSheet.create({
         justifyContent: 'flex-start',
         marginTop: 0,
     },
-    content:{
-        marginTop: 32,
+    titleHeader:{
+        position: 'absolute',
+        width: 341,
+        textAlign: 'center',
+        color:'#3C3A36',
+        fontSize: 24,
+        fontWeight: 'bold',
+        top: 56,
+        lineHeight:32,
+        left: 17,
+        zIndex: -1
     },
-    image:{
-        width: 343,
-        height: 191,
-        borderRadius: 8,
+    contentTitle:{
+            color:'#3C3A36',
+            lineHeight: 32,
+            fontSize: 24,
+            fontWeight: 'bold',
+            marginTop: 232,
+            marginLeft: 16,
+            width: 341,
+            textAlign: 'center',
+            lineHeight: 58.8,
+            fontSize: 56
     },
-    optionsWraper:{
-        width: 343,
-        height: 58,
-        marginTop: 16,
+    description:{
+        lineHeight: 21,
+        fontSize: 14,
         marginLeft: 16,
-        borderWidth: 1,
-        borderRadius: 16,
-    },
-    pageNumber:{
-        marginTop: 47,
-        marginLeft: 168.5,
+        marginTop: 8,
+        textAlign: 'center',
         color: '#78746D',
-        lineHeight: 26,
-        fontSize: 16,
-        fontWeight: '400'
+        width: 341,
     },
     title:{
-        marginTop: 8,
-        width: 343,
+        color:'#3C3A36',
         lineHeight: 32,
-        fontSize: 24,
+        fontSize: 26,
+        width: 341,
         textAlign: 'center',
-        marginLeft: 16,
-        fontWeight: 'bold'
-    },
-    card:{
-        width:346,
-        height: 194,
-        flexDirection:"column",
-        justifyContent:"space-evenly",
-        borderRadius: 8,
-        borderWidth: 1,
-        borderColor: '#BEBAB3',
-        marginLeft: 16,
-        marginTop: 16,
-          
-    },
-    option:{
-        color: '#3C3A36',
-        lineHeight: 26,
-        fontSize: 16,
-        marginLeft: 24,
-        marginTop: 16,
+        fontWeight: 'bold',
+        marginTop: 40,
+        marginLeft: 16
     },
     buttonCircle: {
         width: 309,
@@ -84,9 +75,8 @@ const styles = StyleSheet.create({
         borderRadius: 16,
         justifyContent: 'center',
         alignItems: 'center',
-        position: 'relative',
         marginLeft: 33,
-        marginTop: 61,
+        marginTop: 218
       },
 
 
