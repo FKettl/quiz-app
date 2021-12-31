@@ -3,7 +3,7 @@ import { StyleSheet } from "react-native"
 const styles = StyleSheet.create({
     card:{
         width:345,
-        height: 276,
+        height: 297,
         flexDirection:"column",
         justifyContent:"space-evenly",
         borderRadius: 8,
@@ -34,9 +34,10 @@ const styles = StyleSheet.create({
         borderTopRightRadius: 8,
     },
     title:{
-        marginTop:16,
+        marginTop: 4,
         marginLeft: 16,
         fontSize: 24,
+        lineHeight: 32,
         color: '#3C3A36',
         textAlign: 'left'
     },
@@ -49,7 +50,24 @@ const styles = StyleSheet.create({
     },
     textWraper:{
         width:343,
-        height: 81,
+        height: 103,
+    },
+    acertos:{
+        flexDirection:'row',
+        marginTop: 16,
+        marginLeft: 16,
+    },
+    acertosText:{
+        fontSize: 12,
+        lineHeight: 18,
+        fontWeight: 'bold',
+    },
+    dataText:{
+        position:'absolute',
+        color: '#78746D',
+        right: 16,
+        fontSize: 12,
+        lineHeight: 18,
     }
 })
 

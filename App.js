@@ -4,7 +4,6 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { FontAwesome } from "@expo/vector-icons"
-import { Ionicons } from '@expo/vector-icons';
 import Intro from './src/intro'
 import Entrar from './src/login/entrar'
 import Cadastro from './src/login/cadastrar'
@@ -12,6 +11,12 @@ import EsqueceuSenha from './src/login/esqueceuSenha'
 import HomeList from './src/home/homeList';
 import Config from './src/home/config';
 import Perfil from './src/home/perfil';
+import Histo from './src/home/perfil/historico';
+import About from './src/home/perfil/aboutUs';
+import Pesquisa from './src/home/pesquisa';
+import QuizDetail from './src/quiz/quizDetail';
+import testQuiz from './src/quiz/testQuiz';
+
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -64,6 +69,11 @@ export default function App() {
           <Stack.Screen name="Cadastro" component={Cadastro}/>
           <Stack.Screen name="esqueceuSenha" component={EsqueceuSenha}/>
           <Stack.Screen name="Home" component={Tabs}/>
+          <Stack.Screen name="Historico" component={Histo}/>
+          <Stack.Screen name="About" component={About}/>
+          <Stack.Screen name='Pesquisa' component={Pesquisa}/>
+          <Stack.Screen name='QuizDetail' component={QuizDetail}/>
+          <Stack.Screen name='testQuiz' component={testQuiz}/>
         </Stack.Navigator>
       </NavigationContainer>
       ) : ( <Intro pular={pular}/>)}

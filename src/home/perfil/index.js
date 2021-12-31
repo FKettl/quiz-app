@@ -18,12 +18,14 @@ export default function Perfil({navigation}) {
             </View>
             <View style={styles.content}>
             <Image style={styles.image} source={require('../../img/avatar.png')}></Image>
-            <View style={styles.optionsWraper}>
+            <TouchableOpacity style={styles.optionsWraper}
+            onPress={() => navigation.navigate('Historico')}>
                 <Text style={styles.title}>Seu histórico</Text>
-            </View>
-            <View style={styles.optionsWraper}>
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.optionsWraper}
+            onPress={() => navigation.navigate('About')}>
                 <Text style={styles.title}>Sobre o app</Text>
-            </View>
+            </TouchableOpacity>
             </View>
         
         </View>

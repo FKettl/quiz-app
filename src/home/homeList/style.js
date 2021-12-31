@@ -53,7 +53,6 @@ const styles = StyleSheet.create({
         borderColor: '#BEBAB3',
         borderWidth: 1,
         borderRadius: 12,
-        alignItems:'center'
     },
     icon:{
         position:'absolute',
@@ -65,6 +64,13 @@ const styles = StyleSheet.create({
         marginTop: 10,
         marginLeft: 16,
         width: 345,
+    },
+    pesquisaText:{
+        marginLeft:16,
+        marginTop: 17.5,
+        color: '#78746D',
+        fontSize: 14,
+        lineHeight: 21
     }
 
 })
